@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+</head>
+
+<body>
+
+   <ol>
+
+      {% for single_news  in  news %}
+      
+      <li><a href="/detail/{{single_news.title}}">{{single_news.title}}</a></li>
+
+
+      {% endfor %}
+   
+   </ol>
+
+</body>
+
+</html>
